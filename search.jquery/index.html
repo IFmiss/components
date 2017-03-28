@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Search.js</title>
+	<link rel="stylesheet" href="css/search.jquery.css">
+</head>
+<body style="padding-top: 200px">
+	<input type="text" class="form_hiSearch testSearch" placeholder="搜索你感兴趣的内容">
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/search.jquery.js"></script>
+
+<script>
+	$('.testSearch').search({
+		itemSelected:function(ele,elehref,eletext){
+			// window.location.href = elehref;
+			alert('这是点击搜索的内容之后的操作，可以f12  看参数 ele elehref eletext');
+			console.log(ele);
+			console.log(elehref);
+			console.log(eletext);
+		},
+
+		searchBtnClick:function(){
+			alert('你点击了搜索按钮');
+		}
+	});
+</script>
+</html>
