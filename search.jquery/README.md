@@ -6,9 +6,6 @@ jquery search
 * source :<br/>
 数据 有href 和 text 两个属性
 
-* type: 'fuzzyquery' or 'none'<br/>
-fuzzyquery表示用户在输入信息是显示模糊查询, none则不显示 (默认为fuzzyquery)
-
 * keyboard:<br/>
 是否支持键盘操作 (默认为true)
 
