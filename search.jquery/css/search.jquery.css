@@ -89,7 +89,11 @@ ul li{
   margin: 0;
   text-align: center;
 }
-/* line 58, ../sass/component/_search.scss */
+/* line 57, ../sass/component/_search.scss */
+.dw-search-div .submit_search i {
+  font-size: 20px;
+}
+/* line 62, ../sass/component/_search.scss */
 .dw-search-div .ul_searchList {
   position: absolute;
   display: none;
@@ -101,14 +105,14 @@ ul li{
   z-index: 1111;
   background: #fff;
 }
-/* line 70, ../sass/component/_search.scss */
+/* line 74, ../sass/component/_search.scss */
 .dw-search-div .ul_searchList li {
   height: 36px;
   line-height: 36px;
   padding: 0 5px;
   font-size: 14px;
 }
-/* line 76, ../sass/component/_search.scss */
+/* line 80, ../sass/component/_search.scss */
 .dw-search-div .ul_searchList li a {
   color: #666;
   width: 100%;
@@ -117,15 +121,15 @@ ul li{
   text-decoration: none;
   font-size: 14px;
 }
-/* line 89, ../sass/component/_search.scss */
+/* line 93, ../sass/component/_search.scss */
 .dw-search-div .ul_searchList li.active {
   background: #4D96DF;
 }
-/* line 92, ../sass/component/_search.scss */
+/* line 96, ../sass/component/_search.scss */
 .dw-search-div .ul_searchList li.active a {
   color: #fff;
 }
-/* line 101, ../sass/component/_search.scss */
+/* line 105, ../sass/component/_search.scss */
 .dw-search-div .ul_searchList .search_discription {
   text-align: center;
   margin: 0;
@@ -134,7 +138,7 @@ ul li{
   height: 30px;
   line-height: 30px;
 }
-/* line 109, ../sass/component/_search.scss */
+/* line 113, ../sass/component/_search.scss */
 .dw-search-div .ul_searchList .search_discription a {
   color: #e1e1e1;
 }

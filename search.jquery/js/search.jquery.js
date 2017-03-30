@@ -45,13 +45,14 @@
                     href:'http://www.daiwei.org/',
                     text:'基础财务建模',
                 }],
-            type:                       'fuzzyquery',                           //类型fuzzyquery有模糊查询   none 就是普通的搜索 
+
             keyboard:                   true,                                   //是否支持键盘操作
             fouceshowlist:              true,                                   //是否在inputfouce状态下显示模糊列表
             items:                      8,                                      //最多显示内容数量
 
             showSearchDiscription:      true,                                   //是否显示描述
             searchDiscription:          'powered by Never forgotten youth',     //描述内容
+            
             showSearchIcon:             false,                                  //是否显示Icon
             searchBtnBackground:        '#66A0CE',                              //默认搜索样式的颜色
             searchBtnWidth:             42,                                     //搜索按钮的宽度
@@ -95,7 +96,7 @@
 
             //显示带不带图标还是直接显示文字的按钮
             if(opt.showSearchIcon){
-                _this.btn_search = $('<div class="submit_search"><i class="icon-search"></i></div>').css({
+                _this.btn_search = $('<div class="submit_search"><i class="dw-icon-search"></i></div>').css({
                     width:opt.searchBtnWidth,
                     backgroud:opt.searchBtnBackground,
                 }).appendTo($(".search-"+date.valueOf()+""));
