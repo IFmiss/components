@@ -62,6 +62,6 @@ jquery search
       searchBtnClick:function(){
         alert('你点击了搜索按钮');
       }
-    });
+     });
     
 [在线演示链接  link](http://www.daiwei.org/works/Others/search.jquery/)  
