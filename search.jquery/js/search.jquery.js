@@ -1,4 +1,6 @@
-// this is about search plugin
+
+(function($){
+    // this is about search plugin
     $.fn.search = function(options){
         var _this = this;
         var $this = $(this);
@@ -31,7 +33,7 @@
                     text:'Excel 快捷键教学(上)-如何提高三倍的工作效率',
                 },{
                     href:'http://www.daiwei.org/',
-                    text:'2016 基金从业考试 速成班 下',
+                    text:'2016 基金从业考试 速成班 中',
                 },{
                     href:'http://www.daiwei.org/',
                     text:'跟金融行家学理财',
@@ -138,8 +140,7 @@
 
             if(opt.fouceshowlist){
                 _this.showListUl.on('click', $.proxy(_click, this))
-                      .on('mouseenter', 'li', $.proxy(_mouseenter, this))
-                      .on('mouseout', 'li', $.proxy(_mouseout, this));
+                      .on('mouseenter', 'li', $.proxy(_mouseenter, this));
             }
         };
 
@@ -202,9 +203,7 @@
         }
 
         var _blur = function (e) {
-            if(opt.fouceshowlist){
-                var that = _this.showListUl;
-            }else{
+            if(!opt.fouceshowlist){
                 return;
             }
             var that = _this.showListUl;
@@ -220,8 +219,9 @@
         };
 
         var _focus = function(e) {
+            var that = '';
             if(opt.fouceshowlist){
-                var that = _this.showListUl;
+                that = _this.showListUl;
             }else{
                 return;
             }
@@ -282,11 +282,6 @@
             _textnamehtmlinput(e);
             $(e.currentTarget).addClass('active');
         }
-
-        var _mouseout = function(e){
-            _this.showListUl.find('.active').removeClass('active');
-        }
-
 
         var _textnamehtmlinput = function (e){
             if(opt.showListInInput){
@@ -385,3 +380,6 @@
             _init();
         });
     }
+
+
+})(jQuery);
